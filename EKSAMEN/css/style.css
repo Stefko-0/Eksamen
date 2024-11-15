@@ -59,6 +59,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 55px;
 }
 
 .boks{
@@ -67,4 +68,9 @@ h4 {
     width: 80px;
     text-align: justify;
     font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+    width: fit-content;
 }
