@@ -70,7 +70,12 @@ h4 {
     font-weight: bold;
 }
 
-img{
+.parfyme-bilde{
     max-width: 100%;
     width: fit-content;
+}
+
+.anmeldelser-bilde{
+    max-width: 100%;
+    width: 100px;
 }
