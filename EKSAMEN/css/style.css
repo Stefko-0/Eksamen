@@ -45,14 +45,21 @@ form{
     color: black;
 }
 
+.global-header{
+    margin-bottom: 50px;
+}
+
 .sosialemedier{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
         a{
             text-decoration: none;
             color: black;
+        }
+        h4{
+            margin-bottom: 1rem;
         }
 }
 
@@ -62,6 +69,9 @@ form{
     flex-direction: column;
     align-items: baseline;
     color: black;
+    h4{
+        margin-bottom: 1rem;
+    }
 }
 
 .snarveier a{
@@ -91,7 +101,6 @@ form{
     flex-wrap: wrap;
     align-items: flex-end;
     text-align: end;
-    margin-top: 35px;
     margin-bottom: 45px;
     padding: 30px;
     background-color: lightsteelblue;
@@ -129,7 +138,7 @@ form{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border: solid 1px grey;
+    border: solid 1px rgba(128, 128, 128, 0.24);
     border-radius: 2px;
     margin-bottom: 1rem;
 }
@@ -162,4 +171,49 @@ form{
 
 .kategori-seksjon{
     margin-top: 60px;
+}
+
+.produkt-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .her{
+        font-weight: bolder;
+    }
+}
+
+.parfyme-bilde-1{
+    max-width: 100%;
+    width: fit-content;
+}
+
+.parfyme-bilde-2{
+    max-width: 80%;
+    width: fit-content;
+}
+
+.produkt-info{
+    margin-bottom: 40px;
+}
+
+aside{
+    margin: 30px;
+    .parfyme-aside{
+        margin-bottom: 40px;
+    }
+}
+
+.produkt-side-tekst{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
