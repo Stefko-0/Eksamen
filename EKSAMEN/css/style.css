@@ -19,12 +19,17 @@ form{
     margin: 0;
 }
 
+#logo{
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}
+
 .navigasjon a{
     text-decoration: none;
     color: black;
     gap: 0;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 17px;
 }
 
 .ikoner{
@@ -45,6 +50,10 @@ form{
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 1.5rem;
+        a{
+            text-decoration: none;
+            color: black;
+        }
 }
 
 .snarveier {
@@ -75,9 +84,6 @@ form{
     margin: 0rem 0rem 0.5rem;
 }
 
-h4 {
-    margin-bottom: 0;
-}
 
 .banner{
     display: flex;
@@ -110,7 +116,7 @@ h4 {
     border: 0.5px solid black;
     padding: 18px;
     width: 80px;
-    text-align: justify;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -131,4 +137,29 @@ h4 {
 .anmeldelser-bilde{
     max-width: 100%;
     width: 100px;
+}
+
+.kategori-meny{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.kategori-boks{
+    border: 1px solid black;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.kategori-bokstre{
+    border: 1px solid black;
+    padding: 180px 20px;
+    text-align: center;
+}
+
+.kategori-seksjon{
+    margin-top: 60px;
 }

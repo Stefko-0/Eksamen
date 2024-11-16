@@ -20,18 +20,16 @@
         </form>
         <nav>
             <ul class="navigasjon">
-                <li>Hjem</li>
-                <li>Produkter</li>
-                <li><a href="index.html">Eksamen</a></li>
-                <li>Kategorier</li>
-                <li>Kontakt oss</li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#VMMP">Produkter</a></li>
+                <li><a href="index.html" id="logo">Eksamen</a></li>
+                <li><a href="#VMMP">Kategorier</a></li>
+                <li><a href="#kontakt-oss">Kontakt oss</a></li>
             </ul>
             <ul class="ikoner">
                 <li><i class="fa-solid fa-user"></i></li>
                 <li><i class="fa-solid fa-heart"></i></li>
-                <li> <a href="checkout.html" id="shoppingcart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +40,8 @@
             <p>Suspendisse duis congue at dui et interdum potenti. Duis congue at dui et interdum. Pellentesque pulvinar quis vel.</p>
             <button>FÅ EN PRØVE PAKKE I DAG</button>
         </section>
-        <section>
+
+        <section id="VMMP">
             <h2>Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
             <div class="tre-bokser">
@@ -81,6 +80,19 @@
                 <p>kr 1500</p>
             </article>
         </section>
+
+        <section class="kategori-seksjon">
+            <h2>Våre mest populære produkter</h2>
+            <p>Oppdag det beste av det beste</p>
+            <ul class="kategori-meny">
+                <li class="kategori-boks">Kategori 1</li>
+                <li class="kategori-boks">Kategori 2</li>
+                <li class="kategori-bokstre">Kategori 3</li>
+                <li class="kategori-boks">Kategori 4</li>
+                <li class="kategori-boks">Kategori 5</li>
+            </ul>
+        </section>
+
         <section>
             <h2>Anmeldelser</h2>
             <article class="anmeldelser">
@@ -108,10 +120,12 @@
 
     <footer>
         <nav>
+            <section>
                 <h3>Logo</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            </section>
             <section class="kontakt">
-                    <h4>KONTAKT</h4>
+                    <h4 id="kontakt-oss">KONTAKT</h4>
                     <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
                     <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong>69 60 80 00</p>
                     <p><i class="fa-solid fa-envelope"></i><strong>Epost:</strong>halden@hiof.no</p>
@@ -125,10 +139,10 @@
             </section>
             <section class="sosialemedier">
                     <h4>SOSIALE MEDIER</h4>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-pinterest"></i>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://no.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
             </section>
         </nav>
     </footer>
