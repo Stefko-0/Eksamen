@@ -74,11 +74,29 @@
                     
                     <label for="poststed"></label>
                     <input type="poststed" id="poststed" name="poststed" placeholder="Poststed*" required>
+
+                    <button id="lagre" type="submit">Lagre</button>
+                    <a href="checkout.html">Avbryt</a>
                 </section>
             </form>
         </section>
-        <section>
+        <section class="leveringstype">
             <h2>3.Levering</h2>
+            <h4>LEVERINGSVALG</h4>
+            <form class="leveringsirkler">
+                <label>
+                    <input type="radio" id="express" name="levering" value="express">
+                    Express Levering
+                </label>
+                <label>
+                    <input type="radio" id="utleveringssted" name="levering" value="utleveringssted">
+                    Express Pakke til utleveringssted
+                </label>
+                <label>
+                    <input type="radio" id="hjemme" name="levering" value="hjemme">
+                    Standard Hjemmelevering
+                </label>
+            </form>
         </section>
         <section>
             <h2>4.Betaling</h2>
