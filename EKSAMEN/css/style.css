@@ -209,3 +209,8 @@ aside{
         margin-bottom: 40px;
     }
 }
+
+.leveringsadresse{
+    display: flex;
+    flex-direction: column;
+}
