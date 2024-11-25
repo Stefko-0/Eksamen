@@ -12,10 +12,10 @@
 <body>
     <header class="global-header">
         <form>
-                <input type="search" placeholder="søk her">
-                <button type="submit" title="Søk">
-                    <i class="fas fa-magnifying-glass"></i>
-                </button>
+            <input type="search" placeholder="søk her" class="søkebar">
+            <button type="submit" title="Søk" class="søkeknapp">
+                <i class="fas fa-magnifying-glass"></i>
+            </button>
         </form>
         <nav>
             <ul class="navigasjon">
@@ -34,23 +34,23 @@
     </header>
     <main>
         <section>
-            <h1><strong>Kasse</strong></h1>
+            <h1 id="overskrift-kasse"><strong>Kasse</strong></h1>
             <h2>1.SHOPPINGBAGGEN DIN</h2>
             <article class="parfyme-aside">
-                <img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde">
-                    <h2>Parfyme</h2>
+                <a href="product.html"><img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde"></a>
+                <h2><a href="product.html">Parfyme</a></h2>
                     <p class="produkt-side-pris">kr 1500</p>
                     <p>Farge: brun</p>
             </article>
             <article class="parfyme-aside">
-                <img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde">
-                    <h2>Parfyme</h2>
+                <a href="product.html"><img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde"></a>
+                <h2><a href="product.html">Parfyme</a></h2>
                     <p class="produkt-side-pris">kr 1500</p>
                     <p>Farge: brun</p>
             </article>
             <article class="parfyme-aside">
-                <img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde">
-                    <h2>Parfyme</h2>
+                <a href="product.html"><img src="img/Parfyme.webp" alt="parfyme" class="parfyme-bilde"></a>
+                <h2><a href="product.html">Parfyme</a></h2>
                     <p class="produkt-side-pris">kr 1500</p>
                     <p>Farge: brun</p>
             </article>
@@ -98,22 +98,37 @@
                 </label>
             </form>
         </section>
-        <section>
+        <section class="betaling">
             <h2>4.Betaling</h2>
             <h4>BETAL MED KORT</h4>
-            <form>
+            <form class="kort">
                 <label>Kortnummer</label>
-                <input type="text" name="Kortnummer" placeholder="0000 0000 0000 ****" required>
+                <input type="text" id="Kortnummer" name="Kortnummer" placeholder="0000 0000 0000 ****" required>
 
                 <label>Utløpsdato</label>
-                <input type="text" name="Utløpsdato" placeholder="00/0000" required>
+                <input type="text" id="Utløpsdato" name="Utløpsdato" placeholder="00/0000" required>
 
                 <label>CVC/CVV</label>
-                <input type="text" name="CVC/CVV" placeholder="***" required>
+                <input type="text" id="CVC" name="CVC/CVV" placeholder="***" required>
+
+                <p>Å betale inkl. mva.</p>
+                <p>3500</p>
+                <button type="submit" id="kjøp">Fullfør Kjøp</button>
+                <p> Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+                    Leverandøren forbeholder seg retten til å heve eller avslutte avtalen dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+
+                <label>
+                    <input type="checkbox" name="nyhetsartikkel">Ja takk! Send nyhetsbrev til meg.
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tekstmelding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                </label>
             </form>
         </section>
     </main>
     <footer>
+    <hr class="solid">
         <nav>
             <section>
                 <h2>Logo</h2>
@@ -129,8 +144,8 @@
             <section class="snarveier">
                     <h4>SNARVEIER</h4>
                     <a href="product.html">Produkter</a>
-                    <a href="#">Kategorier</a>
-                    <a href="#">Kontakt oss</a>
+                    <a href="index.html#KS">Kategorier</a>
+                    <a href="#kontak-oss">Kontakt oss</a>
             </section>
             <section class="sosialemedier">
                     <h4>SOSIALE MEDIER</h4>

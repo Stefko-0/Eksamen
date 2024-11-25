@@ -2,12 +2,25 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*HEADER*/
 form{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 10px;
     gap: 0.2rem;
+}
+
+.søkebar{
+    border: 1px solid black;
+    padding: 3px 7px 3px 7px;
+}
+
+.søkeknapp{
+    background-color: white;
+    border: 1px solid black;
+    padding: 3px 7px 3px 7px;
 }
 
 .navigasjon {
@@ -47,6 +60,13 @@ form{
 
 .global-header{
     margin-bottom: 50px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    margin-top: 50px;
 }
 
 .sosialemedier{
@@ -94,6 +114,7 @@ form{
     margin: 0rem 0rem 0.5rem;
 }
 
+/* FORSIDEN */
 
 .banner{
     display: flex;
@@ -106,13 +127,18 @@ form{
     background-color: lightsteelblue;
 }
 
-.banner button {
-    padding: 11px;
-    background-color: white;
-    color: black;
+#banner-knapp{
     border: none;
+    background-color: white;
     font-weight: 700;
+    padding: 11px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
 }
+
+
 
 .tre-bokser{
     display: flex;
@@ -132,6 +158,13 @@ form{
 .parfyme-bilde{
     max-width: 100%;
     width: fit-content;
+}
+
+.parfyme{
+    a{
+        text-decoration: 0;
+        color: black;
+    }
 }
 
 .anmeldelser{
@@ -173,6 +206,8 @@ form{
     margin-top: 60px;
 }
 
+/* PRODUKT SIDE */
+
 .produkt-nav{
     display: flex;
     flex-direction: row;
@@ -205,9 +240,21 @@ form{
 
 aside{
     margin: 30px;
-    .parfyme-aside{
-        margin-bottom: 40px;
+}
+
+.parfyme-aside{
+    margin-bottom: 40px;
+    a{
+        text-decoration: none;
+        color: black;
     }
+}
+
+/* CHECKOUT SIDE */
+
+#overskrift-kasse{
+    margin-bottom: 50px;
+    font-size: 30px;
 }
 
 .leveringsadresse{
@@ -248,3 +295,37 @@ aside{
     }
 }
 
+.betaling{
+    h4{
+        margin-bottom: 0 0 10 0;
+    }
+    h2{
+        margin-top: 40px;
+    }
+}
+
+.kort{
+    display: flex;
+    flex-direction: column;
+    #Kortnummer, #Utløpsdato, #CVC{
+        padding: 10px 10px 10px 5px;
+    }
+    label{
+        font-size: 14px;
+    }
+    #kjøp{
+        color: white;
+        padding: 10px;
+        width: 25%;
+        background-color: #3d4b3b;
+        margin: 0px 0px 15px 0px;
+    }
+    p{
+        margin: 0;
+        font-size: 14px;
+    }
+    #CVC{
+        margin-bottom: 35px;
+    }
+
+}
