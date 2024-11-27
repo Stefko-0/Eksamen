@@ -208,7 +208,7 @@ footer {
     gap: 1rem;
 }
 
-.kategori-boks {
+.kategori-boksen, .kategori-boksto, .kategori-boksfire, .kategori-boksfem {
     border: 1px solid black;
     padding: 120px 20px;
     text-align: center;
@@ -470,7 +470,7 @@ aside {
     .produkt-kort{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .parfyme {
@@ -479,8 +479,150 @@ aside {
         margin-right: 1rem;
     }
 
+    #VMMP{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .tre-bokser{
+        gap: 2rem;
+    }
 
+    .kategori-seksjon{
+        max-width: 1200px;
+        
+        .kategori-meny{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        gap: 3px;
+        }
+
+        .kategori-meny li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            gap: 1rem;
+            font-size: larger;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .kategori-boksen,
+        .kategori-boksto,
+        .kategori-bokstre{
+            max-width: 386px;
+            padding: 0;
+            min-height: 300px;
+            max-height: 380px;
+        }
+
+        .kategori-boksen{
+            background-image: url(../img/Kategori\ 1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        .kategori-boksto{
+            background-image: url(../img/Kategori\ 2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .kategori-bokstre{
+            background-image: url(../img/Kategori\ 3.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .kategori-boksfire{
+            grid-column: span 2;
+            max-width: 864px;
+            padding: 0;
+            min-height: 300px;
+            max-height: 380px;
+            background-image: url('../img/Fugl.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .kategori-boksfem{
+            grid-column: span 1;
+            max-width: 300px;
+            padding: 0;
+            background-image: url('../img/Kategori5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    .seksjon-anmeldelser{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h2{
+            margin-right: 900px;
+        }
+
+    }
+    
+    .seksjon-anmeldelser article{
+        max-width: 255px;
+        margin: 0;
+    }
+
+    /*PRODUKTSIDE*/
+
+    .produkt-side{
+        display: flex;
+        flex-wrap: wrap;
+        nav{
+            margin-right: 900px;
+        }
+    }
+
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+
+        h2{
+            margin-right: 900px;
+        }
+    }
+
+    .parfyme-aside{
+        max-width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #stort{
+        max-width: 520px;
+        margin-right: 50px;
+    }
+
+    #små{
+        max-width: 160px;
+    }    
+
+    .produkt-main{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        gap: 10px;
+        column-gap: 20px;
+    }
+
+    .produkt-info{
+        max-width: 440px;
+    }
 
 
 
