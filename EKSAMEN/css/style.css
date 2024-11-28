@@ -673,10 +673,7 @@ aside {
         }
     }
 
-    form {
-        width: 600px;
-        margin: 0;
-    }
+   
 
     .leveringsadresse{
         display: grid;
@@ -748,8 +745,13 @@ aside {
         margin: 0 !important;
     }
 
+    .dine-opp{
+        width: 600px;
+    }
+
 
     .leveringsirkler{
+        width: 600px;
         label{
         width: 100%;
         height: 80px;
