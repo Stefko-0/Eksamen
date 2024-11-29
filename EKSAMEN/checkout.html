@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eksamen</title>
+    <title>Betalingsside Eksamen</title>
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
@@ -78,7 +78,7 @@
                     <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" required>
                     
                     <label for="postnummer" class="gjem-label" id="postnummer-">Postnummer</label>
-                    <input type="text" id="postnummer" name="postnummer" placeholder="Postnummer*" required>
+                    <input type="number" id="postnummer" name="postnummer" placeholder="Postnummer*" required>
                     
                     <label for="poststed" class="gjem-label" id="poststed-">Poststed</label>
                     <input type="text" id="poststed" name="poststed" placeholder="Poststed*" required>
@@ -115,13 +115,13 @@
             <form method="post" class="kort">
                 <section class="betalmedkort">
                     <label id="Kortnummer-">Kortnummer</label>
-                    <input type="text" id="Kortnummer" name="Kortnummer" placeholder="0000 0000 0000 ****" required>
+                    <input type="number" id="Kortnummer" name="Kortnummer" placeholder="0000 0000 0000 ****" required>
 
                     <label id="Utløpsdato-">Utløpsdato</label>
-                    <input type="text" id="Utløpsdato" name="Utløpsdato" placeholder="00/0000" required>
+                    <input type="date" id="Utløpsdato" name="Utløpsdato" placeholder="00/0000" required>
 
                     <label class="CVC-">CVC/CVV</label>
-                    <input type="text" id="CVC" name="CVC/CVV" placeholder="***" required>
+                    <input type="number" id="CVC" name="CVC/CVV" placeholder="***" required>
 
                     <p>Å betale inkl. mva.</p>
                     <p id="pris">3500 kr</p>
